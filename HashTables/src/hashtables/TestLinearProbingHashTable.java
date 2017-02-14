@@ -1,3 +1,6 @@
+package hashtables;
+
+import hashtables.LinearProbingHashST;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,3 +1,5 @@
+package hashtables;
+
 public interface HashTable<K,V> {
     public int size();
     public boolean isEmpty();

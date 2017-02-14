@@ -1,8 +1,9 @@
+package hashtables;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LinearProbingHashST <K, V> implements HashTable<K, V>{
+public class LinearProbingHashST <K, V> implements HashTable<K, V> {
     private static final int INIT_CAPACITY = 4;
     private int n; // number of key-value pairs in the symbol table
     private int m; //size of linear probing table
