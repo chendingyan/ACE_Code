@@ -72,10 +72,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
-    public Node<T> search(T key){
-        return searchIterative(key, mRoot);
-    }
-
     private Node<T> searchIterative(T key, Node<T> x){
         while(x!=null){
             if(key.compareTo(x.key) > 0){
@@ -88,6 +84,12 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
         return null;
     }
+
+    public Node<T> search(T key){
+        return searchIterative(key, mRoot);
+    }
+
+
 
     private Node<T> maximum(Node<T> tree){
         if(tree == null) return null;
